@@ -1,10 +1,10 @@
 # 📊 Industrial Vending AI: Predictive Demand & Inventory Optimization
 
 
-## Executive Summary
+## Summary
 
 
-This project provides an end-to-end solution for industrial supply chain management by transforming raw vending machine transaction logs into a Smart Restock Engine. By leveraging Machine Learning (Random Forest) and Statistical Optimization, the system predicts tool demand and automatically calculates high-precision inventory thresholds, ensuring that production never stops due to a missing tool.
+This project provides an end-to-end solution for industrial supply chain management by transforming raw vending machine transaction logs into a Smart Restock Engine. By leveraging Machine Learning (Random Forest) and Statistical Optimization, the system predicts tool demand and automatically calculates high-precision inventory thresholds.
 
 **Key Business Impacts**:
 95% Service Level Guarantee: Implemented a Safety Stock buffer that accounts for "spiky" industrial demand, statistically reducing the risk of stockouts to less than 5%.
@@ -17,7 +17,7 @@ This project provides an end-to-end solution for industrial supply chain managem
 
 ## The Technical Workflow
 ### 1. Data Intelligence (Phase 1 & 2)
-Cleaned and merged high-frequency dispense data with restock cost logs. Used Exploratory Data Analysis (EDA) to identify the "Pareto Top 10" SKUs that drive the majority of business value.
+Cleaned and merged high-frequency dispense data with restock cost logs. Used Exploratory Data Analysis (EDA) to identify the "Top 10" SKUs that drive the majority of business value.
 
 ### 2. Feature Engineering (Phase 3)
 Engineered Lag Features (t-1, t-7) and Rolling Averages to capture weekly seasonality. This allows the model to "understand" that demand on a Monday morning often correlates with the previous week's maintenance cycles.
@@ -92,9 +92,9 @@ Analyzed restock frequency against real-time consumption and identified a potent
 
 *The Solution*: Deployed a Random Forest Regressor using lag features and rolling averages.
 
-*Impact*: Reduced prediction error to a Mean Absolute Error (MAE) of 2.29 units, allowing for leaner "Just-in-Time" inventory levels and reducing tied-up capital.
+*Impact*: Reduced prediction error to a Mean Absolute Error (MAE) of 3.37 units, allowing for leaner "Just-in-Time" inventory levels and reducing tied-up capital.
 
-4. **Strategic Asset Allocation (The CFO Win)**
+4. **Strategic Asset Allocation**
 
 *Discovery*: Identified "Dead Stock" in low-utilization machines and high-demand "Hot Zones."
 
